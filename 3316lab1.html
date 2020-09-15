@@ -6,30 +6,55 @@
     <title>pokédex</title>
     <style>
        ul {list-style-type: none;}
-       h2 {color:chocolate;
+       h2 {color:white;
           font-family: courier;
-          font-size: 160%;}
+          font-size: 130%;}
+       table, th, td {border: 1px solid black;
+                      border-collapse: collapse;}
+       th, td {padding: 5px;}
+       img{float:left;margin-right:50px;}
+       .pokemon{background-color:thistle;
+                border: 2px solid black;
+                margin-right:60px;
+                margin-left:10px;
+                padding:20px;}
     </style>
 </head>
 <body>
-    <h1>liokédex for first 20 liokémon</h1>
+    <h1>pokédex</h1>
     <ul> 
-      
+        <div class="pokemon">
         <li>
-            <img src="pokemon/1.png" alt="Bulbasaur" width="100px" height="100px" style=float:left> 
-            <h2>Bulbasaur <!--name--></h2>
-            Pokemon GO Bulbasaur is a Grass and Poison type Pokemon with a max CP of 1115, 
-            118 attack, 111 defense and 128 stamina in Pokemon GO. It was originally found in the Kanto region (Gen 1). Bulbasaur is vulnerable to Fire, Flying, Ice and Psychic type moves. Bulbasaur is boosted by Sunny and Cloudy weather. Bulbasaur's best moves are Tackle and Power Whip (7.96 DPS).
+            <img src="pokemon/1.png" alt="Bulbasaur" width="150px"; height="150px";  > 
+            <h2>#001 Bulbasaur <!--name--></h2>
+            <p>Description:</p>
+            <table>
+              <tr>
+                <th>Generation</th>
+                <th>Region</th> 
+                <th>Rarity</th>
+                <th>Parent</th>
+                <th>Candy Cost</th>
+              </tr>
+              <tr>
+                <th>1</th>
+                <th>Global</th>
+                <th>4</th> 
+                <th>none</th>
+                <th>25</th>
+              </tr>
+            </table>  
         </li>
-       
-        <li><img src="pokemon/2.png" alt="Bulbasaur" width="100px" height="100px"> Ivysaur</li>
-        <li>Venusaur</li>MEGA
-        <li>Charmander</li>
-        <li>Charmeleon</li>
-        <li>Charizard</li>MEGAX MEGAY
-        <li>Squirtle</li>
-        <li>Wartortle</li>
-        <li>Blastoise</li>MEGA
+       </div>
+        <li><img src="pokemon/2.png" alt="Bulbasaur" width="100px" height="100px" style=float:left>
+             <h2>Ivysaur</h2></li>
+        <li><h2>Venusaur</h2></li>MEGA
+        <li><h2>Charmander</h2></li>
+        <li><h2></h2>Charmeleon</li>
+        <li><h2></h2>Charizard</li>MEGAX MEGAY
+        <li><h2></h2>Squirtle</li>
+        <li><h2></h2>Wartortle</li>
+        <li><h2></h2>Blastoise</li>MEGA
         <li>Caterliie</li>
         <li>Metaliod</li>
         <li>Butterfree</li>
