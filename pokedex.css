@@ -20,5 +20,13 @@ img{float:left;margin-right:50px;}
     padding-top:20px;
     padding-left:20px;
 }
+.searchbox input {
+    float: left;
+    margin:10px;
+    border: 1px solid black;
+    font-size: 17px;
+}
+h1{text-align:center;
+    font-size:300%;}
 
 
