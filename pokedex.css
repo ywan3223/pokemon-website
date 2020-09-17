@@ -1,8 +1,12 @@
-
-ul {list-style-type: none;}
+h1{text-align:center;
+    font-size:300%;
+}
+ul {list-style-type: none;
+}
 h2 {color:white;
     font-family: courier;
-    font-size: 130%;}
+    font-size: 130%;
+}
 table, th, td {border: 1px solid black;
     border-collapse: collapse;}
 th, td {padding: 5px;}
@@ -21,12 +25,8 @@ img{float:left;margin-right:50px;}
     padding-left:20px;
 }
 .searchbox input {
-    float: left;
     margin:10px;
     border: 1px solid black;
     font-size: 17px;
 }
-h1{text-align:center;
-    font-size:300%;}
-
 
