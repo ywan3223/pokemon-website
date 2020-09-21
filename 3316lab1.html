@@ -11,12 +11,24 @@
 <body>
     <h1>pokédex
     <div class="searchbox">
-        <input type="text" placeholder="Pokemon Name" id="pokemnonName">
-        <button type="button" onclick="searchName()" >Search</button>
+        <input type="text" placeholder="Pokemon Name" >
+        <button type="button" id="myBtn">Search</button>
         <input type="number" placeholder="Pokemon Number">
-       
+        <button type="button" onclick="searchNumber()" >Search</button>
     </div>
     </h1>
+    <!-- Trigger/Open The Modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
     <script src="searchBox.js"></script>
 
 
@@ -30,7 +42,7 @@
             <img src="pokemon/1.png" alt="Bulbasaur" width="150px"; height="150px";  > 
             <h2>#001 Bulbasaur <!--name--></h2>
             <p>Description: There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.</p>
-            <br><br>
+      
               <table>
               <tr>
                 <th>Generation</th>
