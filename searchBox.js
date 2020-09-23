@@ -1,4 +1,5 @@
-//make a list of pokemon so my js function can search through by number or name       
+
+//write a list for all pokemon name  
 var pokemonNameList = [
     " #001 Bulbasaur",
     " #002 Ivysaur",
@@ -20,24 +21,40 @@ var pokemonNameList = [
     " #018 Pidgeot ",
     " #019 Rattata",
     " #020 Raticate"];
- 
-  
-    
-    function searchNameFunction(){
-        
-        //create an space for 5 search results
-        var array = [];
-        var counter=0;
-        // Get the value of the input field with id="pokename"
-       var input = document.getElementById("searchName").value;
-    
-           //find whether there is any letter include in the array
-            for(i=0; i<=19; i++){
-                if(pokemonNameList[i].toString().toLowerCase().includes(input.toString().toLowerCase()) && counter<5){ //use toLowerCase to make this search case insensitive 
-                array.push(pokemonNameList[i]+"\n");
-                counter ++; //counter to limit only 5 search results
-                }
-            }
-    //print the 5 search results by alert()
-        alert(array);
+
+function nameFunction() {//check if the input value is avaliable
+    var inputname = document.getElementById('searchName').value;
+       //only accept A-Z or a-z 
+        if (!/^[a-zA-Z]+$/.test(inputname)) {
+          alert('Invalid entry, please try again');
+          return;
+        //no more than 20 characters
+        } else if (inputname.length > 20) {
+          alert('Input letter should less than 20 characters');
+          return;
+        }
+        else{
+            searchNameFunction();
+        }
     }
+
+function searchNameFunction(){//set a function using the popup box to show the result
+    //set a array to save the name searched result
+    var arr = [];
+    //set a max variable to control the number of result
+    var max=0;
+    //chang input variables from the search bar to value
+    var input = document.getElementById("searchName").value;
+            
+    //set up for loop to find the matched pokemon name with the input letter
+    for(i=0; i<=19; i++){
+        if(pokemonNameList[i].toString().toLowerCase().includes(input.toString().toLowerCase()) && max<5){ 
+            arr.push(pokemonNameList[i]+"\n");//push the result from name list to the result list
+            max ++; 
+            }
+    }
+    //wipe the comma betwenn every element of the result array
+    var b = arr.join('');
+    //use the alert popup box to show the result
+    alert(b);
+}
