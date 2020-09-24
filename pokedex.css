@@ -1,29 +1,35 @@
 h1{text-align:center;
     font-size:300%;
 }
-p{
-    margin-right: 5cm;
-}
 ul {list-style-type: none;
 }
-h2 {color:white;
+.name{color:white;
     font-family: courier;
     font-size: 130%;
+    margin-left: 1cm;
+    margin-bottom: 0.3cm;
+}
+.Description{
+    margin-right: 4cm;
+    margin-top: 0.5cm;
 }
 table, th, td {border: 1px solid black;
     border-collapse: collapse;
-    font-family: courier}
+    font-family: courier;
+    margin-top: 0.7cm;
+
+}
 th, td {width:30mm;
 }
 img{float:left;
     margin-right:50px;
-    margin-left: 50px;
+    margin-left: 2cm;
 }
 .pokemon{background-color:thistle;
     border: 2px solid black;
-    margin-right:60px;
-    margin-left:10px;
-    padding-bottom:20px;
+    margin-right:5cm;
+    margin-left:5cm;
+    padding-bottom:40px;
     padding-top: 10px;
     font-family: courier
 }

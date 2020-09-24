@@ -5,32 +5,25 @@
     <meta name="viewliort" content="width=device-width, initial-scale=1.0">
     <title>pokédex</title>
     <link rel="stylesheet" href="pokedex.css">
+    <script src="searchBox.js"></script>
 </head>
-
-
 <body>
     <h1>pokédex
     <div class="searchbox">
-        
         <input type="number" placeholder="Pokemon Number">
         <button type="button" onclick="searchNumberFunction()" >Search</button>
 
         <input type="text" placeholder="Pokemon Name" id="searchName" >
         <button type="button" onclick ="nameFunction()">Search</button>
-        <p id="demo"></p>
     </div>
     </h1>
 
-<script src="searchBox.js"></script>
-
-    <br>
     <ul> 
         <div class="pokemon">
-        <li>
+        <li class="name" >#001 Bulbasaur</li>
             <img src="pokemon/1.png" alt="Bulbasaur" width="150px"; height="150px";  > 
-            <h2>#001 Bulbasaur <!--name--></h2>
-            <p>Description: There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.</p>
-      
+           
+            <li class="Description" >Description: There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.</li>
               <table>
               <tr>
                 <th>Generation</th>
@@ -47,14 +40,13 @@
                 <th>25</th>
               </tr>
             </table>  
-        </li>
        </div>
-
+<br>
        <div class="pokemon">
-        <li>
+        <li class="name">#002 Ivysaur</li>
             <img src="pokemon/2.png" alt="Ivysaur" width="150px"; height="150px";  > 
-            <h2>#002 Ivysaur <!--name--></h2>
-            <p>Description:When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.</p>
+           
+            <li class="Description">Description:When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -71,16 +63,12 @@
                 <th>100</th>
               </tr>
             </table>  
-        </li>
        </div>
-
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#003 Venusaur</li>
             <img src="pokemon/3.png" alt="Venusaur" width="150px"; height="150px";  > 
-          
-            <h2>#003 Venusaur <!--name--></h2>
-           
-            <p>Description: Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.</p>
+            <li class="Description">Description: Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -97,14 +85,12 @@
                 <th>none</th>
               </tr>
             </table>
-        </li>
        </div>
-
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#004 Charmander </li>
             <img src="pokemon/4.png" alt="Charmander" width="150px"; height="150px";  > 
-            <h2>#004 Charmander <!--name--></h2>
-            <p>Description:It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.</p>
+            <li class="Description">Description:It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -121,14 +107,12 @@
                 <th>25</th>
               </tr>
             </table>  
-        </li>
        </div>
-
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#005 Charmeleon</li>
             <img src="pokemon/5.png" alt="Charmeleon" width="150px"; height="150px";  > 
-            <h2>#005 Charmeleon <!--name--></h2>
-            <p>Description:It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.</p>
+            <li class="Description">Description:It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -145,15 +129,12 @@
                 <th>100</th>
               </tr>
             </table>  
-        </li>
        </div>
-
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#006 Charizard</li>
             <img src="pokemon/6.png" alt="Charizard" width="150px"; height="150px";  > 
-            
-            <h2>#006 Charizard <!--name--></h2>
-            <p>Description:It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.</p>
+            <li class="Description">Description:It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -170,14 +151,12 @@
                 <th>none</th>
               </tr>
             </table>  
-        </li>
        </div>
-       
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#007 Squirtle</li>
             <img src="pokemon/7.png" alt="Squirtle" width="150px"; height="150px";  > 
-            <h2>#007 Squirtle <!--name--></h2>
-            <p>Description:When it retracts its long neck into its shell, it squirts out water with vigorous force.</p>
+            <li class="Description">Description:When it retracts its long neck into its shell, it squirts out water with vigorous force.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -193,15 +172,13 @@
                 <th>none</th>
                 <th>25</th>
               </tr>
-            </table>  
-        </li>
+            </table> 
        </div>
-
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#008 Wartortle</li>
             <img src="pokemon/8.png" alt="Wartortle" width="150px"; height="150px";  > 
-            <h2>#008 Wartortle <!--name--></h2>
-            <p>Description:It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old.</p>
+            <li class="Description">Description:It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -218,14 +195,12 @@
                 <th>100</th>
               </tr>
             </table>  
-        </li>
        </div>
-
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#009 Blastoise</li>
             <img src="pokemon/9.png" alt="Blastoise" width="150px"; height="150px";  > 
-            <h2>#009 Blastoise <!--name--></h2>
-            <p>Description:It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell.</p>
+            <li class="Description">Description:It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -239,17 +214,15 @@
                 <th>Global</th>
                 <th>6</th> 
                 <th>Wartortle</th>
-                <th>100</th>
+                <th>none</th>
               </tr>
-            </table>  
-        </li>
+            </table>
        </div>
-
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#010 Caterpie</li>
             <img src="pokemon/10.png" alt="Caterliie" width="150px"; height="150px";  > 
-            <h2>#010 Caterpie <!--name--></h2>
-            <p>Description:For protection, it releases a horrible stench from the antenna on its head to drive away enemies.</p>
+            <li class="Description">Description:For protection, it releases a horrible stench from the antenna on its head to drive away enemies.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -266,14 +239,12 @@
                 <th>12</th>
               </tr>
             </table>  
-        </li>
        </div>
-       
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#011 Metaliod</li>
             <img src="pokemon/11.png" alt="Metaliod" width="150px"; height="150px";  > 
-            <h2>#011 Metaliod <!--name--></h2>
-            <p>Description:It is waiting for the moment to evolve. At this stage, it can only harden, so it remains motionless to avoid attack.</p>
+            <li class="Description">Description:It is waiting for the moment to evolve. At this stage, it can only harden, so it remains motionless to avoid attack.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -290,14 +261,12 @@
                 <th>50</th>
               </tr>
             </table>  
-        </li>
        </div>
-
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#012 Butterfree</li>
             <img src="pokemon/12.png" alt="Butterfree" width="150px"; height="150px";  > 
-            <h2>#012 Butterfree <!--name--></h2>
-            <p>Description:In battle, it flaps its wings at great speed to release highly toxic dust into the air.</p>
+            <li class="Description">Description:In battle, it flaps its wings at great speed to release highly toxic dust into the air.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -314,14 +283,12 @@
                 <th>none</th>
               </tr>
             </table>  
-        </li>
        </div>
-
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#013 Weedle</li>
             <img src="pokemon/13.png" alt="Weedle" width="150px"; height="150px";  > 
-            <h2>#013 Weedle <!--name--></h2>
-            <p>Description:Beware of the sharp stinger on its head. It hides in grass and bushes where it eats leaves.</p>
+            <li class="Description">Description:Beware of the sharp stinger on its head. It hides in grass and bushes where it eats leaves.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -338,14 +305,12 @@
                 <th>12</th>
               </tr>
             </table>  
-        </li>
        </div>
-
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#014 Kakuna</li>
             <img src="pokemon/14.png" alt="Kakuna" width="150px"; height="150px";  > 
-            <h2>#014 Kakuna <!--name--></h2>
-            <p>Description:Able to move only slightly. When endangered, it may stick out its stinger and poison its enemy.</p>
+            <li class="Description">Description:Able to move only slightly. When endangered, it may stick out its stinger and poison its enemy.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -362,14 +327,12 @@
                 <th>50</th>
               </tr>
             </table>  
-        </li>
        </div>
-
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#015 Beedrill</li>
             <img src="pokemon/15.png" alt="Beedrill" width="150px"; height="150px";  > 
-            <h2>#015 Beedrill <!--name--></h2>
-            <p>Description:It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.</p>
+            <li class="Description">Description:It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -386,14 +349,12 @@
                 <th>none</th>
               </tr>
             </table>  
-        </li>
        </div>
-
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#016 Pidgey</li>
             <img src="pokemon/16.png" alt="Pidgey" width="150px"; height="150px";  > 
-            <h2>#016 Pidgey <!--name--></h2>
-            <p>Description:Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.</p>
+            <li class="Description">Description:Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -410,14 +371,12 @@
                 <th>12</th>
               </tr>
             </table>  
-        </li>
        </div>
-
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#017 Pidgeotto</li>
             <img src="pokemon/17.png" alt="Pidgeotto" width="150px"; height="150px";  > 
-            <h2>#017 Pidgeotto <!--name--></h2>
-            <p>Description:This Pokémon is full of vitality. It constantly flies around its large territory in search of prey.</p>
+            <li class="Description">Description:This Pokémon is full of vitality. It constantly flies around its large territory in search of prey.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -434,14 +393,12 @@
                 <th>50</th>
               </tr>
             </table>  
-        </li>
        </div>
-
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#018 Pidgeot</li>
             <img src="pokemon/18.png" alt="Pidgeot" width="150px"; height="150px";  > 
-            <h2>#018 Pidgeot <!--name--></h2>
-            <p>Description:This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons.</p>
+            <li class="Description">Description:This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -458,14 +415,12 @@
                 <th>none</th>
               </tr>
             </table>  
-        </li>
        </div>
-
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#019 Rattata</li>
             <img src="pokemon/19.png" alt="Rattata" width="150px"; height="150px";  > 
-            <h2>#019 Rattata <!--name--></h2>
-            <p>Description:Will chew on anything with its fangs. If you see one, you can be certain that 40 more live in the area.</p>
+            <li class="Description">Description:Will chew on anything with its fangs. If you see one, you can be certain that 40 more live in the area.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -482,14 +437,12 @@
                 <th>25</th>
               </tr>
             </table>  
-        </li>
        </div>
-
+       <br>
        <div class="pokemon">
-        <li>
+        <li class="name">#020 Raticate</li>
             <img src="pokemon/20.png" alt="Raticate" width="150px"; height="150px";  > 
-            <h2>#020 Raticate <!--name--></h2>
-            <p>Description:Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey.</p>
+            <li class="Description">Description:Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey.</li>
             <table>
               <tr>
                 <th>Generation</th>
@@ -506,7 +459,6 @@
                 <th>none</th>
               </tr>
             </table>  
-        </li>
        </div>
     </ul>
 </body>
