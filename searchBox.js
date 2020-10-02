@@ -58,7 +58,7 @@ function searchNumberFunction(){//set a function using the popup box to show the
     let input = document.getElementById('searchNumber').value; 
     var max = 0; //set a max variable to control the number of result
     //set pokemon name and description database
-    let pokemonDes = document.getElementsByClassName('description');
+    let pokemonDes = document.getElementsByClassName('pokemonh');
     let pokemonName = document.getElementsByClassName('name');
     //set up for loop to find the matched pokemon name with the input letter
     for (i = 0; i < pokemonName.length; i++) {  
