@@ -62,7 +62,7 @@ function searchNumberFunction(){//set a function using the popup box to show the
     let pokemonName = document.getElementsByClassName('name');
     //set up for loop to find the matched pokemon name with the input letter
     for (i = 0; i < pokemonName.length; i++) {  
-        if (pokemonName[i].innerHTML.toString().toLowerCase().includes(input.toString())&& max<5){ 
+        if (pokemonName[i].innerHTML.toString().toLowerCase().includes(input.toString())&&max<5){ 
            arrN.push(pokemonName[i].innerText + "\n");
            arrD.push(pokemonDes[i].innerText +"\n" +"\n");
            max++;
@@ -74,9 +74,10 @@ for(i=0;i<2*arrD.length;i++){
 }
     //Take out the comma at the beginning of every line
     var b = arrN.join('');
-     alert(b);
+    return b;
 
 }
+
 
 
 
