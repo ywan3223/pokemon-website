@@ -2,13 +2,10 @@ function nameFunction() {//check if the input value is avaliable
     var inputname = document.getElementById('searchName').value;
        //only accept A-Z or a-z 
         if (!/^[a-zA-Z]+$/.test(inputname)) {
-          alert('Invalid entry, please try again');
+         document.getElementById('result').innerText =""; 
           return;
         //no more than 20 characters
-        } else if (inputname.length > 20) {
-          alert('Please enter a name less than 20 characters');
-          return;
-        }
+        } 
         else{
             searchNameFunction();
         }
@@ -49,7 +46,7 @@ function searchNameFunction(){//set a function using the popup box to show the r
           var searchResultsList = document.getElementById('result');
           searchResultsList.appendChild(Namelist);
 }
-
+}
 function numberFunction(){
     var inputnumber = document.getElementById('searchNumber').value;
     if (inputnumber >20 || inputnumber <1) {
@@ -60,10 +57,8 @@ function numberFunction(){
            searchNumberFunction();
           
       }
-    
-        
-   
 }
+
 function searchNumberFunction(){//set a function using the popup box to show the result of number searching
     let arrN= []; //set a array to save the name searched result
     let arrD= [];//set a array to save the description
