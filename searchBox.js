@@ -43,7 +43,7 @@ function searchNameFunction(){
 
     for (i=0; i<20;i++){
         if(PokemonList[i].name.toLowerCase().includes(pokeName.toLowerCase())){
-            document.getElementById("result").appendChild(getList(PokemonList[i].img, PokemonList[i].name, PokemonList[i].description));
+            document.getElementById("result").appendChild(DataList(PokemonList[i].img, PokemonList[i].name, PokemonList[i].description));
             }
     }
     
@@ -67,14 +67,14 @@ function searchNumberFunction(){
     
     for (i=0; i<20;i++){
         if((i+1).toString().includes(pokeNum.toString())){
-            document.getElementById("result").appendChild(getList(PokemonList[i].img, PokemonList[i].name, PokemonList[i].description));
+            document.getElementById("result").appendChild(DataList(PokemonList[i].img, PokemonList[i].name, PokemonList[i].description));
         }
     }
 }
 
 
 
-function getList(img,name,description){
+function DataList(img,name,description){
     let list = document.createElement("div");
     let image = document.createElement("img");
     image.setAttribute("src",img);

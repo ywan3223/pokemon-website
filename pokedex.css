@@ -33,6 +33,9 @@ th, td {width:30mm;
 img{float:left;
     margin-right:50px;
     margin-left: 2cm;
+    width:150px; 
+    height:150px;
+    
 }
 .pokemon{background-color: #FFFFCC;
     border: 2px solid black;
@@ -50,5 +53,11 @@ img{float:left;
 }
 footer{
     background-color: #FFCCCC;
+}
+
+.result{
+   
+    margin-right:15cm;
+    margin-left:15cm;
 }
 
