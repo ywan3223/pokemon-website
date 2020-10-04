@@ -1,4 +1,4 @@
-var PokemonList = [
+var PokemonList = [//set a list for all information about pokemon
     {'name':'#001 Bulbasaur', 'img':'pokemon/1.png', 'description':'Description: There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.'},
     {'name':'#002 Ivysaur', 'img':'pokemon/2.png', 'description':'Description:When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.'},
     {'name':'#003 Venusaur', 'img':'pokemon/3.png', 'description':'Description: Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.'},
@@ -21,30 +21,30 @@ var PokemonList = [
     {'name':'#020 Raticate', 'img':'pokemon/20.png', 'description':'Description:Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey.'}
 ]
 
-function nameFunction() {//check if the input value is avaliable
+function nameFunction() {//check if the input value is avaliable and return correct information to user
     var inputname = document.getElementById('searchName').value;
     var d = document.getElementById("result");
-       if(!/^[a-zA-Z]+$/.test(inputname)){
+       if(!/^[a-zA-Z]+$/.test(inputname)){//check if input value is between a to z
         while(d.firstChild){
-            d.removeChild(d.firstChild);}
+            d.removeChild(d.firstChild);}//nothing will appear if the input value is not meet the requirement
         }
-        else if (inputname.length > 20){
-            alert('Please enter a name less than 20 characters');
+        else if (inputname.length > 20){//check no more than 20 character
+            alert('Please enter a name less than 20 characters');//use alert box to notify user.
           return;
         }
         else{
-        searchNameFunction();
+        searchNameFunction();//search the value function with name
         }
     }
 
     function searchNameFunction(){
         var pokeName = document.getElementById("searchName").value;
         var d = document.getElementById("result");
-        while(d.firstChild){d.removeChild(d.firstChild);}
-        for (i=0; i<20;i++){
+        while(d.firstChild){d.removeChild(d.firstChild);}//delete pokemon to prepare for the next search
+        for (i=0; i<20;i++){//use for loop to search the pokemon matched input value
         if(PokemonList[i].name.toLowerCase().includes(pokeName.toLowerCase())){
             document.getElementById("result").appendChild(DataList(PokemonList[i].img, PokemonList[i].name, PokemonList[i].description));
-            }
+            }//find the matched pokemon and abstruct the infomation from the pokemonlist using datalist function
     }
     }
 
