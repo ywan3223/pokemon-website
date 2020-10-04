@@ -15,13 +15,13 @@ footer{
 .name{color:black;
     font-family: courier;
     font-size: 130%;
-    margin-left: 1cm;
-    margin-bottom: 0.3cm;
+    margin-left: 10cm;
+   margin-top:2cm
 }
 .Description{
     margin-right: 4cm;
-    margin-top: 1.3cm;
-    margin-bottom: 1.3cm;
+    margin-top: 1.5cm;
+    margin-bottom: 3cm;
    
 }
 table, th, td {border: 1px solid black;
@@ -49,6 +49,7 @@ img{float:left;
 }
 
 .searchbox input {
+   
     margin:10px;
     border: 1px solid black;
     font-size: 17px;
