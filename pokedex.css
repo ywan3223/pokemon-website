@@ -56,8 +56,10 @@ footer{
 }
 
 .result{
-   
     margin-right:15cm;
     margin-left:15cm;
+    border-radius: 8px;
+    background-color: #FFCCCC;
 }
+
 
