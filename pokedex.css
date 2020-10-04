@@ -20,7 +20,9 @@ footer{
 }
 .Description{
     margin-right: 4cm;
-    margin-top: 0.5cm;
+    margin-top: 1.3cm;
+    margin-bottom: 1.3cm;
+   
 }
 table, th, td {border: 1px solid black;
     border-collapse: collapse;
@@ -58,8 +60,6 @@ footer{
 .result{
     margin-right:15cm;
     margin-left:15cm;
-    border-radius: 8px;
-    background-color: #FFCCCC;
 }
 
 

@@ -20,6 +20,7 @@ var PokemonList = [
     {'name':'#019 Rattata', 'img':'pokemon/19.png', 'description':'Description:Will chew on anything with its fangs. If you see one, you can be certain that 40 more live in the area.'},
     {'name':'#020 Raticate', 'img':'pokemon/20.png', 'description':'Description:Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey.'}
 ]
+
 function nameFunction() {//check if the input value is avaliable
     var inputname = document.getElementById('searchName').value;
     var d = document.getElementById("result");
@@ -37,10 +38,9 @@ function nameFunction() {//check if the input value is avaliable
     }
 
 function searchNameFunction(){
-    var div = document.getElementById("result");
-    while(div.firstChild){div.removeChild(div.firstChild);}
     var pokeName = document.getElementById("searchName").value;
-
+    var d = document.getElementById("result");
+    while(d.firstChild){d.removeChild(d.firstChild);}
     for (i=0; i<20;i++){
         if(PokemonList[i].name.toLowerCase().includes(pokeName.toLowerCase())){
             document.getElementById("result").appendChild(DataList(PokemonList[i].img, PokemonList[i].name, PokemonList[i].description));
@@ -61,12 +61,11 @@ function numberFunction(){
       }
 }
 function searchNumberFunction(){
-    var div = document.getElementById("result");
-    while(div.firstChild){div.removeChild(div.firstChild);}
-    var pokeNum = document.getElementById("searchNumber").value;
-    
+    var pokemonNum = document.getElementById("searchNumber").value;
+    var d = document.getElementById("result");
+    while(d.firstChild){d.removeChild(d.firstChild);}
     for (i=0; i<20;i++){
-        if((i+1).toString().includes(pokeNum.toString())){
+        if((1+i).toString().includes(pokemonNum.toString())){
             document.getElementById("result").appendChild(DataList(PokemonList[i].img, PokemonList[i].name, PokemonList[i].description));
         }
     }
@@ -74,18 +73,23 @@ function searchNumberFunction(){
 
 
 
-function DataList(img,name,description){
-    let list = document.createElement("div");
-    let image = document.createElement("img");
-    image.setAttribute("src",img);
+function DataList(img,name,description){ //use DOM function to add the name, image and description
+   //create element and textnode
+    let arr = document.createElement("div");
+    let Images = document.createElement("img");
     let Name =  document.createElement("p"); 
+    let Des = document.createElement("p"); 
     let pName = document.createTextNode(name); 
-    Name.appendChild(pName);
-    let Des =  document.createElement("p"); 
     let pDes = document.createTextNode(description); 
+    //use appendchild to add text
+    Images.setAttribute("src",img);
+    Name.appendChild(pName);
     Des.appendChild(pDes);
-    list.appendChild(image);list.appendChild(Name);list.appendChild(Des);
-    return list; 
+    //use appendchild add text into the datalist
+    arr.appendChild(Images);
+    arr.appendChild(Name);
+    arr.appendChild(Des);
+    return arr; 
 }
 
 
