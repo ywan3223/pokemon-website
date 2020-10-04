@@ -50,24 +50,24 @@ function nameFunction() {//check if the input value is avaliable and return corr
 
 
 
-function numberFunction(){
+function numberFunction(){//check if the input value is avaliable and return correct information to user
     var inputnumber = document.getElementById('searchNumber').value;
     var d = document.getElementById("result");
-    if (inputnumber > 20 || inputnumber < 1) {
-        while(d.firstChild){d.removeChild(d.firstChild);}
+    if (inputnumber > 20 || inputnumber < 1) {//check if input value ibetween 1-20
+        while(d.firstChild){d.removeChild(d.firstChild);}//remove all the information 
       } 
     else {
-           searchNumberFunction();
+           searchNumberFunction();//use the function to show the result
       }
 }
 function searchNumberFunction(){
     var pokemonNum = document.getElementById("searchNumber").value;
     var d = document.getElementById("result");
     while(d.firstChild){d.removeChild(d.firstChild);}
-    for (i=0; i<20;i++){
+    for (i=0; i<20;i++){//use for loop to search the pokemon matched input value
         if((1+i).toString().includes(pokemonNum.toString())){
             document.getElementById("result").appendChild(DataList(PokemonList[i].img, PokemonList[i].name, PokemonList[i].description));
-        }
+        }//find the matched pokemon and abstruct the infomation from the pokemonlist using datalist function
     }
 }
 
