@@ -33,21 +33,21 @@ function nameFunction() {//check if the input value is avaliable
           return;
         }
         else{
-            searchNameFunction();
+        searchNameFunction();
         }
     }
 
-function searchNameFunction(){
-    var pokeName = document.getElementById("searchName").value;
-    var d = document.getElementById("result");
-    while(d.firstChild){d.removeChild(d.firstChild);}
-    for (i=0; i<20;i++){
+    function searchNameFunction(){
+        var pokeName = document.getElementById("searchName").value;
+        var d = document.getElementById("result");
+        while(d.firstChild){d.removeChild(d.firstChild);}
+        for (i=0; i<20;i++){
         if(PokemonList[i].name.toLowerCase().includes(pokeName.toLowerCase())){
             document.getElementById("result").appendChild(DataList(PokemonList[i].img, PokemonList[i].name, PokemonList[i].description));
             }
     }
-    
-}
+    }
+
 
 
 function numberFunction(){
@@ -78,17 +78,17 @@ function DataList(img,name,description){ //use DOM function to add the name, ima
     let arr = document.createElement("div");
     let Images = document.createElement("img");
     let Name =  document.createElement("p"); 
-    let Des = document.createElement("p"); 
+    let DescriptionD = document.createElement("p"); 
     let pName = document.createTextNode(name); 
-    let pDes = document.createTextNode(description); 
+    let pDescriptionD = document.createTextNode(description); 
     //use appendchild to add text
     Images.setAttribute("src",img);
     Name.appendChild(pName);
-    Des.appendChild(pDes);
+    DescriptionD.appendChild(pDescriptionD);
     //use appendchild add text into the datalist
     arr.appendChild(Images);
     arr.appendChild(Name);
-    arr.appendChild(Des);
+    arr.appendChild(DescriptionD);
     return arr; 
 }
 
